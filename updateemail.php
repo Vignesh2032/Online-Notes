@@ -89,4 +89,5 @@
 } catch (Exception $e) {
     echo "<div class='alert alert-danger'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</div>";
 }
+
 ?>

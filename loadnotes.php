@@ -6,7 +6,6 @@
     // Get the user_id
     $user_id = $_SESSION['user_id'];
     
-    
     // Run a query to delete the empty notes
     $sql = "DELETE FROM notes WHERE note = ''";
     $result = mysqli_query($link, $sql);

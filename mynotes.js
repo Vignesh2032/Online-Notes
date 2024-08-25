@@ -158,5 +158,5 @@ $(function(){
         for(let i = 0; i < array2.length; i++){
             $(array2[i]).hide(); // Select the element using jQuery and hide it
         }
-    }
+    } 
 });

@@ -20,7 +20,7 @@ $("#updateusernameform").submit(function(event){
 			$('#updateusernamemessage').text("There was an error with an ajax call. Please try again!");
 		}
 	}); 
-});
+}); 
 
 // Ajax call to updatepassword.php
 $("#updatepasswordform").submit(function(event){

@@ -18,5 +18,4 @@
 	if(!$result){
 		echo 'error';
 	}
-	
 ?>
