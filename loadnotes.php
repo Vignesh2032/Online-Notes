@@ -41,7 +41,7 @@
 					<div class='noteheader' id='$note_id'>
 						<div class='text'>$note</div>
 						<div class='timetext'>$time</div>
-					</div>;
+					</div>
 				</div>
                 ";
         }

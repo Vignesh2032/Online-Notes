@@ -3,6 +3,7 @@
     session_start();
     include("connection.php");
 
+	date_default_timezone_set('Asia/Kolkata');
     // Get the user_id
 	$user_id = $_SESSION['user_id'];
     // Get the current time
