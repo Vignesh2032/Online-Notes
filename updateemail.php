@@ -2,6 +2,14 @@
 	//Start the session
 	session_start();
 	
+	
+	use PHPMailer\PHPMailer\PHPMailer;
+	use PHPMailer\PHPMailer\Exception;
+
+	require "PhpMailer/src/Exception.php";
+	require "PhpMailer/src/PHPMailer.php";
+	require "PhpMailer/src/SMTP.php";
+
 	// Connect to database
 	include("connection.php");
 	
@@ -77,7 +85,7 @@
     $mail->AltBody .= "http://localhost:8000/activatenewwmail.php?email=" .urlencode($email) ."&newemail=" .urlencode($newemail) . "&key=$activationkey";
 
     $mail->send();
-    echo "<div class='alert alert-success'>An email has been sent to $newemail. Please click on the link to prove you own that email address.</div>";
+    echo "<div class='alert alert-success'>An email has been sent to $email. Please click on the link to prove you own that email address.</div>";
 } catch (Exception $e) {
     echo "<div class='alert alert-danger'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</div>";
 }

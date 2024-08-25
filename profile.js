@@ -34,7 +34,10 @@ $("#updatepasswordform").submit(function(event){
 		data: datatopost,
 		success: function(data){
 			if(data){
-			$('#updatepasswordmessage').html(data);
+				$('#updatepasswordmessage').html(data);
+				$('#currentpassword').text("");
+				$('#password').text("");
+				$('#password2').text("");
 			}
 		},
 		error: function(){
